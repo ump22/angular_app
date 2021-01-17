@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+
+  hello:
+
+    environment:
+
+      ANGULAR_APP_URL: ${ANGULAR_APP_URL}
+
+    image: ${ANGULAR_APP_IMAGE}
+
+    ports:
+
+      - "80:80"
